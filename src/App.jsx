@@ -5,7 +5,7 @@ import Formulario from './components/Formulario';
 import Hero from './components/Hero/index';
 import Navbar from './components/Napvar';
 import PortfolioCards from './components/Potfolio-cards';
-import PricesCard from './components/Prices-card';
+import PricesCard from './components/Prices-card/index';
 import SeccionFinal from './components/Seccion-final';
 import ServiceCards from './components/Service-cards';
 import Testimonials from './components/Testimonials';

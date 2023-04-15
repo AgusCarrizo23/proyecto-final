@@ -1,87 +1,41 @@
 import React from "react";
-import {
-  Box,
-  Center,
-  Text,
-  Stack,
-  List,
-  ListItem,
-  ListIcon,
-  Button,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
+import { Box, Flex, Container, Heading } from '@chakra-ui/react';
+import PricesCardComponent from "./pricesCard";
+import { PlusSquareIcon } from "@chakra-ui/icons";
 
+function PricesCards() {
 
+    return (
+        <Flex display="flex" flexDirection="column" bgColor="#060606" height="xxl" width="full" marginTop="6%">
+            <Container color="white" textAlign="center" marginTop="3%">
+                <Heading>Our Affordable Pricing Plans</Heading>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
+            </Container>
+            <Container display="flex" flexDirection="row" justifyContent="center" width="100%">
+                <PricesCardComponent
+                plan= 'Basic'
+                precio= '$19,99'
+                descripcion='Estructura de una pagina completa con'
+                 />
+                <PricesCardComponent 
+                 plan= 'Standard'
+                 precio= '$29,99'
+                 descripcion='Estructura de una pagina completa con diseños'
+                 />
+                <PricesCardComponent
+                 plan= 'Premium'
+                 precio= '$39,99'
+                 descripcion='Estructura de una pagina completa con diseños'
+                />
+                <PricesCardComponent
+                 plan= 'Golden'
+                 precio= '$49,99'
+                 descripcion='Estructura de una pagina completa con diseños'
+                />
+            </Container>
+        </Flex>
+    );
 
-function PricesCard() {
-  return (
-    <Center py={6}>
-      <Box
-        maxW={'160px'}
-        w={'full'}
-        bg={useColorModeValue('white', 'gray.800')}
-        boxShadow={'2xl'}
-        rounded={'md'}
-        overflow={'hidden'}
-      >
-        <Stack spacing={0} align={'center'} mt={3}>
-          <Text fontWeight={500} fontSize={'2xl'} fontFamily={'body'}>
-            Plan Básico
-          </Text>
-          <Text color={'gray.500'} fontSize={'sm'}>
-            Ideal para comenzar
-          </Text>
-        </Stack>
-
-        <Stack direction={'row'} justify={'center'} mt={5}>
-          <Box p={2} textAlign={'center'}>
-            <Text fontSize={'3xl'} fontWeight={600}>
-              $50
-            </Text>
-            <Text fontSize={'sm'} color={'gray.500'}>
-              / mes
-            </Text>
-          </Box>
-        </Stack>
-
-        <Box p={6}>
-          <List spacing={3}>
-            <ListItem>
-              <ListIcon as={CheckIcon} color="green.500" />
-              5 cuentas de correo
-            </ListItem>
-            <ListItem>
-              <ListIcon as={CheckIcon} color="green.500" />
-              2 GB de almacenamiento
-            </ListItem>
-            <ListItem>
-              <ListIcon as={CheckIcon} color="green.500" />
-              Soporte por correo electrónico
-            </ListItem>
-            <ListItem>
-              <ListIcon as={CheckIcon} color="green.500" />
-              Acceso a la plataforma web
-            </ListItem>
-          </List>
-
-          <Button
-            w={'full'}
-            mt={8}
-            bg={useColorModeValue('#151f21', 'gray.900')}
-            color={'white'}
-            rounded={'md'}
-            _hover={{
-              transform: 'translateY(-2px)',
-              boxShadow: 'lg',
-            }}
-          >
-            Contratar
-          </Button>
-        </Box>
-      </Box>
-    </Center>
-  );
 }
 
-export default PricesCard;
+export default PricesCards;

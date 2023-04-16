@@ -17,15 +17,15 @@ function PricesCardComponent(props) {
   return (
     <Center py={6}>
       <Box
-        maxW={'300px'}
+        maxW={'250px'}
         w={'full'}
-        maxH={'500px'}
+        maxH={'450px'}
         h={'full'}
         boxShadow={'2xl'}
         bgColor="#111111"
         rounded={'md'}
         overflow={'hidden'}
-        padding="50px"
+        padding="30px"
         marginBottom="3%"
       >
         <Stack spacing={0} align={'center'}>

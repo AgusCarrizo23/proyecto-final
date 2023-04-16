@@ -1,19 +1,16 @@
 import React from "react";
-import './Footer.css'
+import { Flex } from '@chakra-ui/react'
+import UpComponent from "./upComponent";
+import DownComponent from "./downComponent";
 
 
 function Footer() {
-
-    return(
-        
-     <>
-<div className="contenedor-texto"> 
-   <p> AQUI VAN mi footer</p>
-    </div>
-    </>
-    
+    return (
+        <Flex flexDirection="column">
+            <UpComponent />
+            <DownComponent />
+        </Flex>
     );
-    
-    }
-    
-    export default Footer ;
+}
+
+export default Footer;

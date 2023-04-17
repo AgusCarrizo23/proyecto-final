@@ -15,18 +15,18 @@ function UpComponent() {
                 </Text>
                 <Flex height="90%" width="100%" justifyContent="space-between" marginTop="22px">
                     <Box width="34%">
-                        <Text fontWeight={500} fontSize={'lg'} fontFamily={'body'} color="white">Sent Mail</Text>
-                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">contacto@contact.com</Text>
-                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">contacto@contact.com</Text>
+                        <Text fontWeight={500} fontSize={'lg'} fontFamily={'body'} color="white">Enviame un correo!</Text>
+                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">Agusdevelop@develop.com</Text>
+                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">agusgraphic@gmail.com</Text>
                     </Box>
                     <Box width="34%">
-                        <Text fontWeight={500} fontSize={'lg'} fontFamily={'body'} color="white">Make Call</Text>
-                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">+123 456 7890</Text>
-                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">+123 456 7890</Text>
+                        <Text fontWeight={500} fontSize={'lg'} fontFamily={'body'} color="white">Hazme una llamada!</Text>
+                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">+381 459 7890</Text>
+                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">+381 456 0987</Text>
                     </Box>
                     <Box width="34%">
-                        <Text fontWeight={500} fontSize={'lg'} fontFamily={'body'} color="white">Get in Touch</Text>
-                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">123/A, Hamburguer City</Text>
+                        <Text fontWeight={500} fontSize={'lg'} fontFamily={'body'} color="white">Encuentrame!</Text>
+                        <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">balcarce 450, Tucuman, Arg</Text>
                         <Text fontSize={'sm'} fontFamily={'body'} color="white" marginTop="10px">New York, USA</Text>
                     </Box>
                 </Flex>

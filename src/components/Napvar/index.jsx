@@ -7,9 +7,9 @@ function Navbar() {
 
 
 return(
-  <Flex alignItems="center" justifyContent="space-between" bg="#ccc" px={4} py={3}>
+  <Flex alignItems="center" justifyContent="space-between" bg="black" px={4} py={3} color="white">
       <Box>
-      <Image src="https://images.unsplash.com/photo-1624172541682-14675a0db485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bG9nbyUyMGRlc2lnbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Mi Logo" boxSize="50px" objectFit="contain" />
+      <Image src="https://e7.pngegg.com/pngimages/170/650/png-clipart-olympic-logo-olympic-rings-sports-olympics.png" alt="Mi Logo" boxSize="100px" objectFit="contain" />
       </Box>
       <Box>
         <Flex alignItems="center">
@@ -22,7 +22,7 @@ return(
         </Flex>
       </Box>
       <Box>
-         <Button bg="#4CAF50" color="white" size="md" borderRadius="sm" px={4}>Hire me!</Button> 
+         <Button bg="#ef4f10" color="white" size="md" borderRadius="sm" px={4}>Hire me!</Button> 
       </Box>
     </Flex>
 

@@ -6,12 +6,12 @@ import img2 from '../../assets/images/seccionFinal/final2.png';
 import img3 from '../../assets/images/seccionFinal/final3.png'
 
 function SeccionFinal() {
-    const descrip = "Descripcion bla bla bla bla bla bla bla bla bla bla bla";
+    const descrip = "lorem ipsus 6";
 
     return (
         <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16} flexDirection="column">
             <Container color="white" textAlign="center" marginTop="3%">
-                <Heading>Latest Blogs</Heading>
+                <Heading>Ultimos blogs:</Heading>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
             </Container>
             <Flex display="flex" flexDirection="row" justifyContent="space-between" width="84%">

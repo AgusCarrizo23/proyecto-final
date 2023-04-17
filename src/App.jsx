@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <ChakraProvider>
-        <Navbar />
+        
         <Hero></Hero>
         <ServiceCards />
         <PortfolioCards />

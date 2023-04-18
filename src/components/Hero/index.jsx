@@ -25,9 +25,9 @@ function Hero() {
               <Button bgColor="#ef4f10" size="lg" mr={4}>welcome!</Button>
               <Heading as="h1" size="3xl">Agustina Carrizo</Heading>
               <Text fontSize="lg" mb={8} mt={4}>Frontend Developer & web designer</Text>
-              <Container fontSize="lTeg" mb={8}>
+              <Text fontSize="lTeg" mb={8}>
                 Soy un/a profesional altamente motivado/a con una pasión por el desarrollo de software, y creo que mi experiencia y habilidades pueden contribuir significativamente a la empresa.
-              </Container>
+              </Text>
               <Button bgColor="#ef4f10" size="lg" mr={4}>Hire me!</Button>
               <Button bgColor="#060606" size="lg" border="1px solid #fff">Explore</Button>
             </Box>

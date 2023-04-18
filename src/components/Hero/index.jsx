@@ -9,40 +9,41 @@ function Hero() {
 
   return (
     <div display="flex" flexDirection="column">
-      <div>
-        <Navbar />
-      </div>
-      <div>
 
 
-        <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16}>
 
-          <Image src={bgHero} position="absolute" width="100%" bgColor="#060606" marginTop="21%"/>
+      <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" height="3xl">
 
-          <Box display="flex" flexDirection="row" alignItems="center" justifyContent="space-between" width="80%" position="relative" >
+        <Box bgImage={bgHero} bgRepeat="repeat" bgSize="100%" width="full" height="3xl">
+
+          <Box display="flex" flexDirection="column" alignItems="center" justifyContent="space-between" position="relative" height="xl">
+            <Navbar width="100%"  display="flex" justifyContent="space-around"/>
             {/* Sección izquierda */}
-            <Box color="white" maxW="xl" mr={16}>
-              <Button bgColor="#ef4f10" size="lg" mr={4}>welcome!</Button>
-              <Heading as="h1" size="3xl">Agustina Carrizo</Heading>
-              <Text fontSize="lg" mb={8} mt={4}>Frontend Developer & web designer</Text>
-              <Container fontSize="lTeg" mb={8}>
-                Soy un/a profesional altamente motivado/a con una pasión por el desarrollo de software, y creo que mi experiencia y habilidades pueden contribuir significativamente a la empresa.
-              </Container>
-              <Button bgColor="#ef4f10" size="lg" mr={4}>Hire me!</Button>
-              <Button bgColor="#060606" size="lg" border="1px solid #fff">Explore</Button>
-            </Box>
-            {/* Sección derecha */}
-            <Box maxW="sm" marginRight="10%">
-              <Box boxShadow="xl" bgColor="white" height='400px' width='400px' borderRadius='100%' position='relative' marginTop="10%">
-                <Image src={agusHero} alt="Mi imagen" boxShadow="xl" borderRadius='100%' height='450px' width='310px' position='absolute' marginLeft='12%' marginTop="-10%" />
+            <Box display="flex" flexDirection="row">
+              <Box color="white" maxW="xl" mr={16}>
+                <Button bgColor="#ef4f10" size="lg" mr={4}>welcome!</Button>
+                <Heading as="h1" size="3xl">Agustina Carrizo</Heading>
+                <Text fontSize="lg" mb={8} mt={4}>Frontend Developer & web designer</Text>
+                <Text fontSize="lTeg" mb={8}>
+                  Soy un/a profesional altamente motivado/a con una pasión por el desarrollo de software, y creo que mi experiencia y habilidades pueden contribuir significativamente a la empresa.
+                </Text>
+                <Button bgColor="#ef4f10" size="lg" mr={4}>Hire me!</Button>
+                <Button bgColor="#060606" size="lg" border="1px solid #fff">Explore</Button>
+              </Box>
+              {/* Sección derecha */}
+              <Box maxW="sm" marginRight="10%">
+                <Box boxShadow="xl" bgColor="white" height='400px' width='400px' borderRadius='100%' position='relative' marginTop="10%">
+                  <Image src={agusHero} alt="Mi imagen" boxShadow="xl" borderRadius='100%' height='450px' width='310px' position='absolute' marginLeft='12%' marginTop="-10%" />
+                </Box>
               </Box>
             </Box>
           </Box>
-        </Flex>
-      </div>
-      </div>
-      );
+        </Box>
+      </Flex>
+    </div>
+
+  );
 
 }
 
-      export default Hero;
+export default Hero;

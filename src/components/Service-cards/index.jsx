@@ -18,7 +18,7 @@ import {
 function ServiceCards() {
 
     return (
-        <Flex display="flex" flexDirection="column" bgColor="#060606" height="xl" width="full" marginTop="10%">
+        <Flex display="flex" flexDirection="column" bgColor="#060606" height="xl" width="full">
             <Container color="white" textAlign="center" marginTop="3%">
                 <Heading>Servicios</Heading>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!

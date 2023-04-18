@@ -1,35 +1,45 @@
 import React from "react";
-import { Flex, Box, Button, IconButton, Menu, MenuButton, MenuList, MenuItem, Text , Image} from "@chakra-ui/react";
+import { Flex, Box, Button, IconButton, Menu, MenuButton, MenuList, MenuItem, Text, Image } from "@chakra-ui/react";
 
 
 
 function Navbar() {
 
 
-return(
-  <Flex alignItems="center" justifyContent="space-between" bg="" px={4} py={3} color="white">
+  return (
+    <Flex alignItems="center" bgColor="transparent" px={4} py={3} color="white" width={'full'} justifyContent="space-around">
       <Box>
-      <Image src="https://e7.pngegg.com/pngimages/170/650/png-clipart-olympic-logo-olympic-rings-sports-olympics.png" alt="Mi Logo" boxSize="100px" objectFit="contain" />
+        <Image src="https://e7.pngegg.com/pngimages/170/650/png-clipart-olympic-logo-olympic-rings-sports-olympics.png" alt="Mi Logo" boxSize="100px" objectFit="contain" />
       </Box>
       <Box>
         <Flex alignItems="center">
-          
-          <Box mx={4}><Text>About Me</Text></Box>
-          <Box mx={4}><Text>Services</Text></Box>
-          <Box mx={4}><Text>Portfolio</Text></Box>
-          <Box mx={4}><Text>blog </Text></Box>
-          <Box mx={4}><Text>contact Us</Text></Box>
+
+          <Box mx={4}><Button bgColor="transparent" _hover={{
+            bgColor: "#ef4f10"
+          }}>About Me</Button></Box>
+          <Box mx={4}><Button bgColor="transparent" _hover={{
+            bgColor: "#ef4f10"
+          }}>Services</Button></Box>
+          <Box mx={4}><Button bgColor="transparent" _hover={{
+            bgColor: "#ef4f10"
+          }}>Portfolio</Button></Box>
+          <Box mx={4}><Button bgColor="transparent" _hover={{
+            bgColor: "#ef4f10"
+          }}>blog </Button></Box>
+          <Box mx={4}><Button bgColor="transparent" _hover={{
+            bgColor: "#ef4f10"
+          }}>contact Us</Button></Box>
         </Flex>
       </Box>
       <Box>
-         <Button bg="#ef4f10" color="white" size="md" borderRadius="sm" px={4}>Hire me!</Button> 
+        <Button bg="white" color="black" size="lg" borderRadius="lg" px="20px">Hire me!</Button>
       </Box>
     </Flex>
 
-  
 
 
-);
+
+  );
 
 }
 

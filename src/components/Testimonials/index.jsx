@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-    Container,
     Heading,
     Flex,
     Text,
@@ -8,6 +7,9 @@ import {
     Box
 } from "@chakra-ui/react";
 import CardTestimonios from "./cardExample";
+import AvatarIcon2 from '../../assets/images/avatar/myAvatar2.svg'
+import AvatarIcon3 from '../../assets/images/avatar/myAvatar 3.svg'
+import AvatarIcon from '../../assets/images/avatar/myAvatar.svg'
 
 function Testimonials() {
     const loremExample =
@@ -16,12 +18,15 @@ function Testimonials() {
     const [nombre, setNombre] = useState("Gonzalo Herrera");
     const [ubicacion, setUbicacion] = useState("Toronto");
     const [activeIndex, setActiveIndex] = useState(0);
+    const [avatar, setAvatar] = useState(AvatarIcon)
 
-    const handleChangeTestimonial = (index, nombre, ubicacion, descripcion) => {
+
+    const handleChangeTestimonial = (index, nombre, ubicacion, descripcion, avatar) => {
         setActiveIndex(index);
         setNombre(nombre);
         setUbicacion(ubicacion);
         setDescipcion(descripcion);
+        setAvatar(avatar)
     };
 
     return (
@@ -66,7 +71,8 @@ function Testimonials() {
                                     0,
                                     "Gonzalo Herrera",
                                     "Toronto, USA",
-                                    loremExample
+                                    loremExample,
+                                    AvatarIcon
                                 )
                             }
                         >
@@ -82,7 +88,8 @@ function Testimonials() {
                                     1,
                                     "Gerardo Vidal",
                                     "Belin, Alemania",
-                                    loremExample
+                                    loremExample,
+                                    AvatarIcon2
                                 )
                             }
                         >
@@ -98,7 +105,8 @@ function Testimonials() {
                                     2,
                                     "Frank Tompson",
                                     "Paris, Francia",
-                                    loremExample
+                                    loremExample,
+                                    AvatarIcon3
                                 )
                             }
                         >
@@ -111,6 +119,7 @@ function Testimonials() {
                         descripcion={descripcion}
                         nombre={nombre}
                         ubicacion={ubicacion}
+                        avatar={avatar}
                     ></CardTestimonios>
                 </Box>
             </Flex>

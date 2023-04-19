@@ -4,14 +4,14 @@ function CardTestimonios(props) {
   const { descripcion, nombre, ubicacion, avatar } = props;
 
   return (
-    <Box position="relative">
+    <Box position="relative" >
       <Card
         bg="#060606"
         border="1px solid white"
         color="white"
         padding="4"
         borderRadius="xl"
-        width="500px"
+        width="495px"
         height="300px"
         position="absolute"
         zIndex="1"

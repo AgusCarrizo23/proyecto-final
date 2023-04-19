@@ -7,7 +7,7 @@ function Navbar() {
 
 
   return (
-    <Flex alignItems="center" bgColor="transparent" px={4} py={3} color="white" width={'full'} justifyContent="space-around">
+    <Flex alignItems="center" bgColor="transparent" py={3} color="white" width="80%" justifyContent="space-between">
       <Box>
         <Image src="https://e7.pngegg.com/pngimages/170/650/png-clipart-olympic-logo-olympic-rings-sports-olympics.png" alt="Mi Logo" boxSize="100px" objectFit="contain" />
       </Box>

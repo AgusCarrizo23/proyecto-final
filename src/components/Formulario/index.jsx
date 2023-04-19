@@ -27,11 +27,11 @@ function Formulario() {
    return (
 
 
-      <Flex display="flex" flexDirection="column" bgColor="#060606" height="xl"  >
-         <Box position="relative" height="700px" width="800px" mx="auto">
-            <Image src={ImgForm} height="550px" width="850px" mx="auto" borderRadius=" 100px 15px 15px 15px" marginTop="-4%" />
+      <Flex display="flex" flexDirection="column" bgColor="#060606" height="xl">
+         <Box position="relative" height="70px" width="full" mx="auto">
+            <Image src={ImgForm} height="xl" width="80%" mx="auto" borderRadius=" 100px 15px 15px 15px" marginTop="-2%" />
             <Box position="absolute" top="0" left="0" bottom="0" right="0" zIndex="1" >
-               <Heading marginLeft="10%" color="#ef4f10">Déjame tu correo para recibir más info!</Heading>
+               <Heading textAlign="center" color="#ef4f10">Déjame tu correo para recibir más info!</Heading>
                <Box maxWidth="500px" mx="auto" bgColor="#060606" color="white" width="90%"  borderRadius=" 30px 18px 18px 18px" marginTop="2%">
                   <form action="https://formsubmit.co/agustina.carrizo2012@gmail.com" method="POST">
                      <FormControl id="nombre" isRequired marginLeft="2%" marginRight="14%" paddingTop="11px" paddingRight="4%">

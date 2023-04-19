@@ -19,8 +19,8 @@ function Hero() {
           <Box display="flex" flexDirection="column" alignItems="center" justifyContent="space-between" position="relative" height="xl">
             <Navbar width="100%"  display="flex" justifyContent="space-around"/>
             {/* Sección izquierda */}
-            <Box display="flex" flexDirection="row">
-              <Box color="white" maxW="xl" mr={16}>
+            <Box display="flex" flexDirection="row" width="80%">
+              <Box color="white">
                 <Button bgColor="#ef4f10" size="lg" mr={4}>welcome!</Button>
                 <Heading as="h1" size="3xl">Agustina Carrizo</Heading>
                 <Text fontSize="lg" mb={8} mt={4}>Frontend Developer & web designer</Text>

@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function CardServiceComponent(props) {
     
-
     return (
         <Flex
             bg='#111111'
@@ -29,8 +28,8 @@ function CardServiceComponent(props) {
                 >
             <FontAwesomeIcon color="#ef4f10" icon={props.icon} />
             </Box>
-            <Text fontSize="sm">{props.titulo}</Text>
-            <ArrowForwardIcon color="#ef4f10" boxSize={6}></ArrowForwardIcon>
+            <Text fontSize={'lg'} fontWeight={600} color="white">{props.titulo}</Text>
+            <ArrowForwardIcon color="#ef4f10" boxSize={10}></ArrowForwardIcon>
         </Flex>
     );
 }

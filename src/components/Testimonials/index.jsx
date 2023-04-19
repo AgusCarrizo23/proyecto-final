@@ -114,7 +114,7 @@ function Testimonials() {
                         </Button>
                     </Box>
                 </Box>
-                <Box>
+                <Box marginRight="4%">
                     <CardTestimonios
                         descripcion={descripcion}
                         nombre={nombre}

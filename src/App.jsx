@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Formulario from './components/Formulario';
 import Hero from './components/Hero/index';
 import Navbar from './components/Napvar';
-import PortfolioCards from './components/Potfolio-cards';
+import PortfolioCards from './components/Portfolio-cards';
 import PricesCard from './components/Prices-card/index';
 import SeccionFinal from './components/Seccion-final';
 import ServiceCards from './components/Service-cards';

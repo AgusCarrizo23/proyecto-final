@@ -23,8 +23,8 @@ function ServiceCards() {
                 <Heading>Servicios</Heading>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
             </Container>
-            <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" >
-                <Box display="flex" flexDirection="row" justifyContent="space-between" width="70%" padding="10">
+            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="full">
+                <Box display="flex" flexDirection="row" justifyContent="space-between" marginTop="3%" width="80%" flexWrap="wrap">
                     <CardServiceComponent
                         titulo="Web Design"
                         icon={faDesktop} />
@@ -38,7 +38,7 @@ function ServiceCards() {
                         icon={faDisplay} />
                     
                 </Box>
-                <Box display="flex" flexDirection="row" justifyContent="space-between" width="70%" padding="10">
+                <Box display="flex" flexDirection="row" justifyContent="space-between" width="80%" marginTop="3%" flexWrap="wrap">
                     <CardServiceComponent
                         titulo="Graphic Design"
                        icon={faPaintBrush}/>
@@ -52,7 +52,7 @@ function ServiceCards() {
                          icon={faComputer} />
                     
                 </Box>
-                <Button colorScheme="#060606" bg="#ef4f10" size="lg" mr={4}>welcome</Button>
+                <Button colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%">welcome</Button>
             </Box>
 
         </Flex>

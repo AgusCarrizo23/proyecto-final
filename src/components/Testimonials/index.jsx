@@ -116,7 +116,8 @@ function Testimonials() {
                     </Box>
                 </Box>
                 <Box marginRight="4%"
-                marginTop={{ base: "2rem", md: "0" }} marginRight="4%">
+                    marginTop={{ base: "2rem", md: "0" }}
+                >
                     <CardTestimonios
                         descripcion={descripcion}
                         nombre={nombre}

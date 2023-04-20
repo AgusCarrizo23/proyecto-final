@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Box, Button, IconButton, Menu, MenuButton, MenuList, MenuItem, Text, Image } from "@chakra-ui/react";
-import './index.css'
+
 
 
 

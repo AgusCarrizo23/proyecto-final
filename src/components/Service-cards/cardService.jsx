@@ -17,6 +17,7 @@ function CardServiceComponent(props) {
             display="flex"
             alignItems="center"
             justifyContent={{ base: "space-between", md: "flex-start" }}
+            
         >
             <Box
                 display="flex"
@@ -27,7 +28,7 @@ function CardServiceComponent(props) {
                 height={{ base: "8", md: "10" }}
                 borderRadius="100"
                 marginRight={{ md: "4" }}
-                marginBottom={{ base: "2", md: "0" }}
+                
             >
                 <FontAwesomeIcon color="#ef4f10" icon={props.icon} />
             </Box>
@@ -35,6 +36,7 @@ function CardServiceComponent(props) {
                 flexGrow="1"
                 marginLeft={{ md: "4" }}
                 marginRight={{ base: "4", md: "0" }}
+                
             >
                 <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight={600} color="white">{props.titulo}</Text>
             </Box>

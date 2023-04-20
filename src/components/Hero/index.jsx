@@ -5,6 +5,7 @@ import agusHero from '../../assets/images/hero/heroFoto.png'
 import Navbar from '../Napvar/index'
 
 
+
 function Hero() {
 
   return (
@@ -21,7 +22,7 @@ function Hero() {
             {/* Sección izquierda */}
             <Box display="flex" flexDirection="row" width="80%">
               <Box color="white">
-                <Button bgColor="#ef4f10" size="lg" mr={4}>welcome!</Button>
+                <Button bgColor="#ef4f10" size="lg" mr={4}  >welcome!</Button>
                 <Heading as="h1" size="3xl">Agustina Carrizo</Heading>
                 <Text fontSize="lg" mb={8} mt={4}>Frontend Developer & web designer</Text>
                 <Text fontSize="lTeg" mb={8}>

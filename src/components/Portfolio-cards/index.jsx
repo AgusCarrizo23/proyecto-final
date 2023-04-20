@@ -12,7 +12,7 @@ function PortfolioCards() {
         <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16} flexDirection="column">
             <Flex
                 display="flex"
-                flexDirection={{ base: "column", md: "row" }}
+            hb    flexDirection={{ base: "column", md: "row" }}
                 justifyContent="space-between"
                 width="80%"
                 marginBottom="40px"
@@ -21,7 +21,7 @@ function PortfolioCards() {
                     <Text color='white' fontSize={{ base: "1rem", md: "1.2rem" }}>Mi Portafolio</Text>
                     <Heading color='white' fontSize={{ base: "2xl", md: "4xl" }}>Ver trabajos realizados</Heading>
                 </Box>
-                <Box width="50%"
+                <Box 
                     width={{ base: "100%", md: "50%" }}
                     marginTop={{ base: "20px", md: "0" }}
                     paddingLeft={{ base: "0", md: "40px" }}>

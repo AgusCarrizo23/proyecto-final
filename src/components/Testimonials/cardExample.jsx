@@ -11,37 +11,57 @@ function CardTestimonios(props) {
         color="white"
         padding="4"
         borderRadius="xl"
-        width="495px"
-        height="300px"
+        width={{ base: "100%", md: "495px" }}
+        height={{ base: "100%", md: "300px" }}
         position="absolute"
         zIndex="1"
         marginTop="60px"
-        marginLeft="50px"
+        marginLeft={{ base: "0", md: "50px" }}
       >
       </Card>
       <Box>
         <Card
           bg="#111111"
           borderRadius="xl"
-          width="500px"
-          height="300px"
+          width={{ base: "100%", md: "500px" }}
+          height={{ base: "100%", md: "300px" }}
           zIndex="2"
           color="white"
         >
           <Avatar
-         size="lg"
-         name={nombre}
-         src={avatar}
-         position="absolute"
-         top="-3"
-         left="-3"
-         zIndex="1"
-         marginRight="10px"
-         marginBottom="20px"
+            size={{ base: "md", md: "lg" }}
+            name={nombre}
+            src={avatar}
+            position="absolute"
+            top="-3"
+            left="-3"
+            zIndex="1"
+            marginRight={{ base: "0", md: "10px" }}
+            marginBottom={{ base: "10px", md: "20px" }}
           />
-          <Box fontSize="md" paddingLeft="15%" paddingTop="10%" paddingRight="15%">{descripcion}</Box>
-          <Box fontSize="lg" mt="4" paddingLeft="15%" paddingRight="15%">{nombre}</Box>
-          <Box mt="4" paddingLeft="15%" paddingRight="15%">{ubicacion}</Box>
+          <Box
+            fontSize={{ base: "sm", md: "md" }}
+            paddingLeft={{ base: "5%", md: "15%" }}
+            paddingTop={{ base: "20%", md: "10%" }}
+            paddingRight={{ base: "5%", md: "15%" }}
+          >
+            {descripcion}
+          </Box>
+          <Box
+            fontSize={{ base: "md", md: "lg" }}
+            mt="4"
+            paddingLeft={{ base: "5%", md: "15%" }}
+            paddingRight={{ base: "5%", md: "15%" }}
+          >
+            {nombre}
+          </Box>
+          <Box
+            fontSize={{ base: "sm", md: "md" }}
+            paddingLeft={{ base: "5%", md: "15%" }}
+            paddingRight={{ base: "5%", md: "15%" }}
+          >
+            {ubicacion}
+          </Box>
         </Card>
       </Box>
     </Box>

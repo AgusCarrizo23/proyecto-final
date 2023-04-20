@@ -11,7 +11,7 @@ function PricesCards() {
                 <Heading>Nuestros planes de precios </Heading>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
             </Container>
-            <Flex display="flex" flexDirection="row" justifyContent="space-between" width="80%" marginTop="3%">
+            <Flex display="flex" flexDirection={{ base: 'column', md: 'row' }}  justifyContent="space-between" width="80%" marginTop="3%">
                 <PricesCardComponent
                 plan= 'Basic'
                 precio= '$19,99'

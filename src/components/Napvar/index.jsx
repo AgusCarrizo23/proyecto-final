@@ -3,6 +3,7 @@ import { Flex, Box, Button, IconButton, Menu, MenuButton, MenuList, MenuItem, Te
 
 
 
+
 function Navbar() {
 
 
@@ -11,7 +12,7 @@ function Navbar() {
       <Box>
         <Image src="https://e7.pngegg.com/pngimages/170/650/png-clipart-olympic-logo-olympic-rings-sports-olympics.png" alt="Mi Logo" boxSize="100px" objectFit="contain" />
       </Box>
-      <Box>
+      <Box className="navbarCaja">
         <Flex alignItems="center">
 
           <Box mx={4}><Button bgColor="transparent" _hover={{

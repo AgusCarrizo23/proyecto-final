@@ -45,6 +45,7 @@ function Testimonials() {
                 width="80%"
                 marginTop="3%"
                 marginBottom="40px"
+                flexDirection={{ base: "column", md: "row" }}
             >
                 <Box
                     bgColor="#060606"
@@ -114,7 +115,9 @@ function Testimonials() {
                         </Button>
                     </Box>
                 </Box>
-                <Box marginRight="4%">
+                <Box marginRight="4%"
+                    marginTop={{ base: "2rem", md: "0" }}
+                >
                     <CardTestimonios
                         descripcion={descripcion}
                         nombre={nombre}

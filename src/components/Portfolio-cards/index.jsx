@@ -4,6 +4,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons'
 import img1 from '../../assets/images/portfolio/portfolio-img1.png'
 import img2 from '../../assets/images/portfolio/portfolio-img2.png'
 import img3 from '../../assets/images/portfolio/portfolio-img3.png'
+import { motion } from "framer-motion";
 
 
 function PortfolioCards() {
@@ -12,7 +13,7 @@ function PortfolioCards() {
         <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16} flexDirection="column">
             <Flex
                 display="flex"
-            hb    flexDirection={{ base: "column", md: "row" }}
+                hb flexDirection={{ base: "column", md: "row" }}
                 justifyContent="space-between"
                 width="80%"
                 marginBottom="40px"
@@ -21,22 +22,31 @@ function PortfolioCards() {
                     <Text color='white' fontSize={{ base: "1rem", md: "1.2rem" }}>Mi Portafolio</Text>
                     <Heading color='white' fontSize={{ base: "2xl", md: "4xl" }}>Ver trabajos realizados</Heading>
                 </Box>
-                <Box 
+                <Box
                     width={{ base: "100%", md: "50%" }}
                     marginTop={{ base: "20px", md: "0" }}
                     paddingLeft={{ base: "0", md: "40px" }}>
                     <Text color="white" fontSize={{ base: "sm", md: "lg" }}>Además, tengo experiencia en React y Hooks, HTML5, CSS3, JavaScript, API Rest, Git, Github y Gitlab, tengo habilidades prácticas en bibliotecas de UI como Material UI y Chakra UI.
                     </Text>
-                    <Button color="#ef4f10"
+                    <Button
+                        as={motion.button}
+                        whileHover={{ scale: 1.2, color: "black" }}
+                        whileTap={{ scale: 0.9 }} color="#ef4f10"
                         bgColor="#060606"
                         marginTop={{ base: "10px", md: "20px" }}
                         fontSize={{ base: "sm", md: "lg" }}>View All <ArrowForwardIcon color="#ef4f10" boxSize={4} marginLeft="5px"></ArrowForwardIcon></Button>
                 </Box>
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4} width="80%" margin="auto">
-                <Image src={img1} />
-                <Image src={img2} />
-                <Image src={img3} />
+                <motion.div whileHover={{ scale: 1.2 }}>
+                    <Image src={img1} />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }}>
+                    <Image src={img2} />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }}>
+                    <Image src={img3} />
+                </motion.div>
             </SimpleGrid>
         </Flex>
     );

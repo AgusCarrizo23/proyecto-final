@@ -1,5 +1,6 @@
 import React from "react";
 import { Flex, Box, Button, IconButton, Menu, MenuButton, MenuList, MenuItem, Text, Image } from "@chakra-ui/react";
+import { motion } from "framer-motion"
 
 
 
@@ -33,7 +34,7 @@ function Navbar() {
         </Flex>
       </Box>
       <Box>
-        <Button bg="white" color="black" size="lg" borderRadius="lg" px="20px">Hire me!</Button>
+        <Button  as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bg="white" color="black" size="lg" borderRadius="lg" px="20px">Hire me!</Button>
       </Box>
     </Flex>
 

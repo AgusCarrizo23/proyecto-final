@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Flex, Container, Heading } from '@chakra-ui/react';
 import PricesCardComponent from "./pricesCard";
 import { PlusSquareIcon } from "@chakra-ui/icons";
+import { motion } from "framer-motion";
 
 function PricesCards() {
 
@@ -12,26 +13,34 @@ function PricesCards() {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
             </Container>
             <Flex display="flex" flexDirection={{ base: 'column', md: 'row' }}  justifyContent="space-between" width="80%" marginTop="3%">
-                <PricesCardComponent
-                plan= 'Basic'
-                precio= '$19,99'
-                descripcion='Estructura de una pagina completa con diseños'
-                 />
+            <motion.div whileHover={{ scale: 1.2 }}>
+      <PricesCardComponent
+        plan='Basic'
+        precio='$19,99'
+        descripcion='Estructura de una pagina completa con diseños'
+      />
+    </motion.div>
+    <motion.div whileHover={{ scale: 1.2 }}>
                 <PricesCardComponent 
                  plan= 'Standard'
                  precio= '$29,99'
                  descripcion='Estructura de una pagina completa con diseños'
                  />
+                 </motion.div>
+                 <motion.div whileHover={{ scale: 1.2 }}>
                 <PricesCardComponent
                  plan= 'Premium'
                  precio= '$39,99'
                  descripcion='Estructura de una pagina completa con diseños'
                 />
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }}>
                 <PricesCardComponent
                  plan= 'Golden'
                  precio= '$49,99'
                  descripcion='Estructura de una pagina completa con diseños'
                 />
+                </motion.div>
             </Flex>
         </Flex>
     );

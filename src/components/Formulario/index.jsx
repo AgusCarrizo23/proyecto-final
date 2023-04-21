@@ -10,9 +10,8 @@ import {
    Heading,
    Image
 } from "@chakra-ui/react";
-import ImgForm from '../../assets/images/formulario/ImgForm.jpg'
-import TelegramIcon from '@mui/icons-material/Telegram';
-
+import ImgForm from '../../assets/images/formulario/ImgForm.jpg';
+import { motion } from "framer-motion";
 
 
 function Formulario() {
@@ -82,7 +81,9 @@ function Formulario() {
                            
                         />
                      </FormControl>
-                     <Button bgColor="#ef4f10" marginTop="16px" type="submit"marginLeft="40%" marginBottom="2%" >
+                     <Button  as={motion.button}
+                        whileHover={{ scale: 1.2, color: "black" }}
+                        whileTap={{ scale: 0.9 }} bgColor="#ef4f10" marginTop="16px" type="submit"marginLeft="40%" marginBottom="2%" >
                         Enviar
                      </Button>
                      <input type="hidden" name="_next" value="http://localhost:5173" />

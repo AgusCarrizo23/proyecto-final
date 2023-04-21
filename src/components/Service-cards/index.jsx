@@ -9,6 +9,7 @@ import {
     faHouseLaptop,
     faComputer
 } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion"
 
 
 
@@ -23,15 +24,20 @@ function ServiceCards() {
                 <Heading>Servicios</Heading>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
             </Container>
-            <Box  display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="full" >
+            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="full" >
                 <Box display="flex" flexDirection="row" justifyContent="space-between" marginTop="3%" width="80%" flexWrap="wrap"  >
-                    <CardServiceComponent
-                        titulo="Web Design"
-                        icon={faDesktop} />
-                    <CardServiceComponent
-                        titulo="Analytical Abilities"
-                        icon={faInfoCircle} />
-
+                
+                        <CardServiceComponent
+                            titulo="Web Design"
+                            icon={faDesktop}
+                        />
+                       
+                    
+                 
+                        <CardServiceComponent
+                            titulo="Analytical Abilities"
+                            icon={faInfoCircle} />
+                   
 
                     <CardServiceComponent
                         titulo="Web Depelopement"
@@ -44,7 +50,7 @@ function ServiceCards() {
                     width="80%"
                     marginTop="3%"
                     flexWrap="wrap"
-                    >
+                >
                     <CardServiceComponent
                         titulo="Graphic Design"
                         icon={faPaintBrush} />
@@ -54,11 +60,12 @@ function ServiceCards() {
                         icon={faHouseLaptop} />
 
                     <CardServiceComponent
+
                         titulo="Problem Solving"
                         icon={faComputer} />
 
                 </Box>
-                <Button colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%"  >welcome</Button>
+                <Button as={motion.button} whileHover={{ scale: 1.2, color: "black", backgroundColor: "white" }} colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%"  >welcome</Button>
             </Box>
 
         </Flex>

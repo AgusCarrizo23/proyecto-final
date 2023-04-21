@@ -1,11 +1,14 @@
 import React from "react";
 import { Flex, Box, Button, IconButton, Menu, MenuButton, MenuList, MenuItem, Text, Image } from "@chakra-ui/react";
-import { motion } from "framer-motion"
-
+import { motion } from "framer-motion";
+import PortfolioCards from '../Portfolio-cards';
 
 
 
 function Navbar() {
+  const redirectToLandingPage = () => {
+    history.push('../Portfolio-cards');
+  };
 
 
   return (
@@ -18,11 +21,12 @@ function Navbar() {
 
           <Box mx={4}><Button bgColor="transparent" _hover={{
             bgColor: "#ef4f10"
-          }}>About Me</Button></Box>
+          }}>Sobre mi</Button></Box>
           <Box mx={4}><Button bgColor="transparent" _hover={{
             bgColor: "#ef4f10"
-          }}>Services</Button></Box>
-          <Box mx={4}><Button bgColor="transparent" _hover={{
+          }}>Servicios</Button></Box>
+          <Box mx={4}>
+            <Button onClick={redirectToLandingPage} bgColor="transparent" _hover={{
             bgColor: "#ef4f10"
           }}>Portfolio</Button></Box>
           <Box mx={4}><Button bgColor="transparent" _hover={{
@@ -30,7 +34,7 @@ function Navbar() {
           }}>blog </Button></Box>
           <Box mx={4}><Button bgColor="transparent" _hover={{
             bgColor: "#ef4f10"
-          }}>contact Us</Button></Box>
+          }}>contacto</Button></Box>
         </Flex>
       </Box>
       <Box>

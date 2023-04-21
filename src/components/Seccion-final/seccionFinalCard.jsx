@@ -13,7 +13,8 @@ function SeccionFinalCardComponent(props) {
     const { fecha, descripcion, imagen } = props;
 
     return (
-        <Center py={6}>
+        <Center py={6}
+            mx="auto">
             <Box
                 maxW={'400px'}
                 w={'full'}
@@ -24,8 +25,9 @@ function SeccionFinalCardComponent(props) {
                 rounded={'md'}
                 overflow={'hidden'}
                 padding="30px"
-            >
-                <Image src={imagen} width="100%" borderRadius="5px"/>
+
+            >"
+                <Image src={imagen} width="100%" borderRadius="5px" />
                 <Text color='white' fontSize="1rem" marginTop="10px">{fecha}</Text>
                 <Text fontSize={'lg'} fontWeight={600} color="white" marginTop="10px">{descripcion}</Text>
                 <Text color='#ef4f10' fontSize="1rem" marginTop="10px">Leer Mas</Text>

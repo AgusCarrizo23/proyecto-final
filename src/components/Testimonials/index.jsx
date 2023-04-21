@@ -12,9 +12,8 @@ import AvatarIcon3 from '../../assets/images/avatar/myAvatar 3.svg'
 import AvatarIcon from '../../assets/images/avatar/myAvatar.svg'
 
 function Testimonials() {
-    const loremExample =
-        "Lorem ipsum dolor molestias reprehenderit pariatur nobis! Est error aliquid, delectus dolore vitae tempora repudiandae praesentium dicta et ullam aut autem aperiam enim.";
-    const [descripcion, setDescipcion] = useState(loremExample);
+    
+    const [descripcion, setDescipcion] = useState("Cuando pedí un trabajo a Agus me sorprendí que no sabia hacer responsiva mi pagina pero dió todo su esfuerzo en lograr que quepa en mi movil , lo logró, aunque no muy linda!");
     const [nombre, setNombre] = useState("Gonzalo Herrera");
     const [ubicacion, setUbicacion] = useState("Toronto");
     const [activeIndex, setActiveIndex] = useState(0);
@@ -72,7 +71,7 @@ function Testimonials() {
                                     0,
                                     "Gonzalo Herrera",
                                     "Toronto, USA",
-                                    loremExample,
+                                    "Cuando pedí un trabajo a Agus me sorprendí que no sabia hacer responsiva mi pagina pero dió todo su esfuerzo en lograr que quepa en mi movil , lo logró, aunque no muy linda!",
                                     AvatarIcon
                                 )
                             }
@@ -89,7 +88,7 @@ function Testimonials() {
                                     1,
                                     "Gerardo Vidal",
                                     "Belin, Alemania",
-                                    loremExample,
+                                    "Cuando estuve en contacto con Agustina me sentí muy comodo aunque no tiene mucha experiencia creo que lo da todo para poder terminar bien un trabajo y vaya que lo hace excelente! ",
                                     AvatarIcon2
                                 )
                             }
@@ -106,7 +105,7 @@ function Testimonials() {
                                     2,
                                     "Frank Tompson",
                                     "Paris, Francia",
-                                    loremExample,
+                                    "Excelente profesional, recomendada!",
                                     AvatarIcon3
                                 )
                             }

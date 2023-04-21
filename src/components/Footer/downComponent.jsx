@@ -11,8 +11,8 @@ function DownComponent() {
         <Flex bgColor="#ef4f10" width={'full'} height="100px" justifyContent="center">
             <Box display="flex" justifyContent="space-between" width="80%" alignItems="center">
                 <Text fontSize={'lg'} fontWeight={600} color="white">@2019 all rights rederved</Text>
-                <Box display="flex" flexDirection="row" width="30%" justifyContent="space-between">
-                <GitHubIcon fontSize={'large'} sx={{ color: 'white'}}  />
+                <Box display="flex" flexDirection={{ base: "row", md: "row" }} width={{ base: "70%", md: "30%" }} justifyContent="space-between" alignItems="center">
+                    <GitHubIcon fontSize={'large'} sx={{ color: 'white'}}  />
                     <FacebookOutlinedIcon fontSize={'large'} sx={{ color: 'white'}}/>
                     <InstagramIcon fontSize={'large'} sx={{ color: 'white'}}/>
                     <PinterestIcon fontSize={'large'} sx={{ color: 'white'}}/>

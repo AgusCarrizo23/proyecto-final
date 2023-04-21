@@ -15,10 +15,11 @@ function PortfolioCards() {
             justify="space-between"
             justifyContent="center"
             py={16}
-            flexDirection="column">
+            flexDirection="column"
+            >
             <Flex
                 display="flex"
-                hb flexDirection={{ base: "column", md: "row" }}
+                flexDirection={{ base: "column", md: "row" }}
                 justifyContent="space-between"
                 width="80%"
                 marginBottom="40px"

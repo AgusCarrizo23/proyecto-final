@@ -14,9 +14,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 function App() {
 
   return (
-    <div>
-      <ChakraProvider>
-        
+    <>
+      <ChakraProvider>  
         <Hero></Hero>
         <ServiceCards />
         <PortfolioCards />
@@ -24,9 +23,9 @@ function App() {
         <Testimonials />
         <SeccionFinal />
         <Formulario />
-        <Footer><h1>soy footer</h1></Footer>
+        <Footer></Footer>
       </ChakraProvider>
-    </div>
+    </>
   );
 }
 

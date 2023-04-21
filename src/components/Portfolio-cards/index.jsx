@@ -10,7 +10,12 @@ import { motion } from "framer-motion";
 function PortfolioCards() {
 
     return (
-        <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16} flexDirection="column">
+        <Flex bgColor="#060606"
+            align="center"
+            justify="space-between"
+            justifyContent="center"
+            py={16}
+            flexDirection="column">
             <Flex
                 display="flex"
                 hb flexDirection={{ base: "column", md: "row" }}

@@ -19,27 +19,41 @@ import { motion } from "framer-motion"
 function ServiceCards() {
 
     return (
-        <Flex display="flex" flexDirection="column" bgColor="#060606" height="100vh" width="full" flex="1"  >
+        <Flex display="flex"
+            flexDirection="column"
+            bgColor="#060606"
+            height="100vh"
+            width="full"
+            flex="1"  >
             <Container color="white" textAlign="center" marginTop="3%">
                 <Heading>Servicios</Heading>
                 ¡Hola!
 
-Soy una desarrolladora y diseñadora gráfica con experiencia en la creación de soluciones digitales para diversas empresas. Me especializo en la creación de sitios web, aplicaciones móviles, diseños de marca y publicidad digital.
+                Soy una desarrolladora y diseñadora gráfica con experiencia en la creación de soluciones digitales para diversas empresas. Me especializo en la creación de sitios web, aplicaciones móviles, diseños de marca y publicidad digital.
             </Container>
-            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="full" >
-                <Box display="flex" flexDirection="row" justifyContent="space-between" marginTop="3%" width="80%" flexWrap="wrap"  >
-                
-                        <CardServiceComponent
-                            titulo="Diseño web"
-                            icon={faDesktop}
-                        />
-                       
-                    
-                 
-                        <CardServiceComponent
-                            titulo="habilidades analiticas"
-                            icon={faInfoCircle} />
-                   
+            <Box display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                width="full" >
+                <Box display="flex"
+                    flexDirection="row"
+                    justifyContent="space-between"
+                    marginTop="3%"
+                    width="80%"
+                    flexWrap="wrap"  >
+
+                    <CardServiceComponent
+                        titulo="Diseño web"
+                        icon={faDesktop}
+                    />
+
+
+
+                    <CardServiceComponent
+                        titulo="habilidades analiticas"
+                        icon={faInfoCircle} />
+
 
                     <CardServiceComponent
                         titulo="Web Depelopement"

@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 function Hero() {
 
   return (
-    <div display="flex" flexDirection="column">
+    <Box display="flex" flexDirection="column">
 
 
 
@@ -84,7 +84,7 @@ function Hero() {
           </Box>
         </Box>
       </Flex>
-    </div>
+    </Box>
 
   );
 

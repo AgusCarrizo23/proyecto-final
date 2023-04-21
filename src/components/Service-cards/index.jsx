@@ -12,10 +12,6 @@ import {
 import { motion } from "framer-motion"
 
 
-
-
-
-
 function ServiceCards() {
 
     return (
@@ -24,7 +20,8 @@ function ServiceCards() {
             bgColor="#060606"
             height="100vh"
             width="full"
-            flex="1"  >
+            flex="1"
+            >
             <Container color="white" textAlign="center" marginTop="3%">
                 <Heading>Servicios</Heading>
                 ¡Hola!
@@ -42,23 +39,16 @@ function ServiceCards() {
                     marginTop="3%"
                     width="80%"
                     flexWrap="wrap"  >
-
                     <CardServiceComponent
                         titulo="Diseño web"
                         icon={faDesktop}
                     />
-
-
-
                     <CardServiceComponent
                         titulo="habilidades analiticas"
                         icon={faInfoCircle} />
-
-
                     <CardServiceComponent
                         titulo="Web Depelopement"
                         icon={faDisplay} />
-
                 </Box>
                 <Box display="flex"
                     flexDirection="row"
@@ -70,23 +60,18 @@ function ServiceCards() {
                     <CardServiceComponent
                         titulo="Diseño grafico"
                         icon={faPaintBrush} />
-
                     <CardServiceComponent
                         titulo="aplicacion"
                         icon={faHouseLaptop} />
-
                     <CardServiceComponent
 
                         titulo="resolucion problemas"
                         icon={faComputer} />
-
                 </Box>
                 <Button as={motion.button} whileHover={{ scale: 1.2, color: "black", backgroundColor: "white" }} colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%"  >ver todo</Button>
             </Box>
-
         </Flex>
     );
-
 }
 
 export default ServiceCards;

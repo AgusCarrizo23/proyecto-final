@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.svg"
 function UpComponent() {
   return (
     <Flex
-      templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
+      templatecolumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
       bgColor="#060606"
       width="full"
       minHeight="300px"
@@ -49,7 +49,7 @@ function UpComponent() {
           Si tiene alguna consulta, no dude en ponerse en contacto conmigo
         </Text>
         <Flex
-          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          templatecolumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
           gap={{ base: "20px", md: "40px" }}
           marginTop={{ base: "20px", md: "22px" }}
           width="100%"
@@ -103,15 +103,15 @@ function UpComponent() {
           </Box>
           <Box>
             <Text fontWeight={500}
-              Text fontSize={{ base: "sm", md: "md" }}
+              fontSize={{ base: "sm", md: "md" }}
               fontFamily={'body'}
               color="white"
               marginBottom={{ base: "10px", md: "20px" }}>Encuentrame!</Text>
-            <Text Text fontSize={{ base: "sm", md: "md" }}
+            <Text fontSize={{ base: "sm", md: "md" }}
               fontFamily={'body'}
               color="white"
               marginBottom={{ base: "10px", md: "20px" }}>balcarce 450, Tucuman, Arg</Text>
-            <Text Text fontSize={{ base: "sm", md: "md" }}
+            <Text fontSize={{ base: "sm", md: "md" }}
               fontFamily={'body'}
               color="white"
               marginBottom={{ base: "10px", md: "20px" }}>New York, USA</Text>

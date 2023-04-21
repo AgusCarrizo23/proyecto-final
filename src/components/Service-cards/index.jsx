@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Heading, Flex, Box, Button } from '@chakra-ui/react';
-import CardServiceComponent from "./CardService";
+import CardServiceComponent from "./cardService";
 import {
     faDesktop,
     faInfoCircle,
@@ -44,7 +44,7 @@ function ServiceCards() {
                         icon={faDesktop}
                     />
                     <CardServiceComponent
-                        titulo="habilidades analiticas"
+                        titulo="Habilidades analiticas"
                         icon={faInfoCircle} />
                     <CardServiceComponent
                         titulo="Web Depelopement"
@@ -61,11 +61,11 @@ function ServiceCards() {
                         titulo="Diseño grafico"
                         icon={faPaintBrush} />
                     <CardServiceComponent
-                        titulo="aplicacion"
+                        titulo="Aplicacion"
                         icon={faHouseLaptop} />
                     <CardServiceComponent
 
-                        titulo="resolucion problemas"
+                        titulo="Resolucion problemas"
                         icon={faComputer} />
                 </Box>
                 <Button as={motion.button} whileHover={{ scale: 1.2, color: "black", backgroundColor: "white" }} colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%"  >ver todo</Button>

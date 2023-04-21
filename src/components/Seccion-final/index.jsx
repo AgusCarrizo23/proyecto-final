@@ -7,23 +7,23 @@ import img3 from '../../assets/images/seccionFinal/final3.png'
 import { motion } from "framer-motion";
 
 function SeccionFinal() {
-    const descrip = "lorem ipsus 6";
+    
 
     return (
         <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16} flexDirection="column">
             <Container color="white" textAlign="center" marginTop="3%">
                 <Heading>Ultimos blogs:</Heading>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
+                Bienvenidos a mi blog personal, donde comparto mis pensamientos y experiencias sobre una variedad de temas que me apasionan. Desde tecnología y negocios hasta estilo de vida y viajes, encontrarás una gran variedad de temas en mi blog.
             </Container>
             <Flex display="flex" flexDirection="row" justifyContent="space-between" width="84%">
             <motion.div whileHover={{ scale: 1.2 }}>
-                <SeccionFinalCardComponent fecha="26 de octubre, 2023" descripcion={descrip} imagen={img1}/>
+                <SeccionFinalCardComponent fecha="26 de octubre, 2023" descripcion="Día de finanzas!" imagen={img1}/>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.2 }}>
-                <SeccionFinalCardComponent fecha="18 de septiembre, 2013" descripcion={descrip} imagen={img2}/>
+                <SeccionFinalCardComponent fecha="18 de septiembre, 2013" descripcion="Día de debates.." imagen={img2}/>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.2 }}>
-                <SeccionFinalCardComponent fecha="02 de agosto, 2003" descripcion={descrip} imagen={img3}/>
+                <SeccionFinalCardComponent fecha="02 de agosto, 2003" descripcion="Reunion de viernes!" imagen={img3}/>
                 </motion.div>
             </Flex>
             <Flex marginTop="3%">

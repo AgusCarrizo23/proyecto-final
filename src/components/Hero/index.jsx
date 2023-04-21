@@ -23,14 +23,14 @@ function Hero() {
             {/* Sección izquierda */}
             <Box display="flex" flexDirection="row" width="80%">
               <Box color="white">
-                <Button as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bgColor="#ef4f10"   size="lg" mr={4}  >welcome!</Button>
+                <Button as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bgColor="#ef4f10"   size="lg" mr={4} >Bienvenido!</Button>
                 <Heading as="h1" size="3xl">Agustina Carrizo</Heading>
                 <Text fontSize="lg" mb={8} mt={4}>Frontend Developer & web designer</Text>
                 <Text fontSize="lTeg" mb={8}>
-                  Soy un/a profesional altamente motivado/a con una pasión por el desarrollo de software, y creo que mi experiencia y habilidades pueden contribuir significativamente a la empresa.
+                  Soy una profesional altamente motivada con una pasión por el desarrollo de software, y creo que mi experiencia y habilidades pueden contribuir significativamente a la empresa.
                 </Text>
-                <Button  as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bgColor="#ef4f10" size="lg" mr={4}>Hire me!</Button>
-                <Button  as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bgColor="#060606" size="lg" border="1px solid #fff">Explore</Button>
+                <Button  as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bgColor="#ef4f10" size="lg" mr={4}>contratame!</Button>
+                <Button  as={motion.button} whileHover={{scale: 1.2 , color: "black" }} bgColor="#060606" size="lg" border="1px solid #fff">Conoceme!</Button>
               </Box>
               {/* Sección derecha */}
               <Box display={{ base: 'none', md: 'block' }} maxW="sm" marginRight="10%">

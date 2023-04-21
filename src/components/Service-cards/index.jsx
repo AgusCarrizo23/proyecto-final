@@ -22,20 +22,22 @@ function ServiceCards() {
         <Flex display="flex" flexDirection="column" bgColor="#060606" height="100vh" width="full" flex="1"  >
             <Container color="white" textAlign="center" marginTop="3%">
                 <Heading>Servicios</Heading>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
+                ¡Hola!
+
+Soy una desarrolladora y diseñadora gráfica con experiencia en la creación de soluciones digitales para diversas empresas. Me especializo en la creación de sitios web, aplicaciones móviles, diseños de marca y publicidad digital.
             </Container>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="full" >
                 <Box display="flex" flexDirection="row" justifyContent="space-between" marginTop="3%" width="80%" flexWrap="wrap"  >
                 
                         <CardServiceComponent
-                            titulo="Web Design"
+                            titulo="Diseño web"
                             icon={faDesktop}
                         />
                        
                     
                  
                         <CardServiceComponent
-                            titulo="Analytical Abilities"
+                            titulo="habilidades analiticas"
                             icon={faInfoCircle} />
                    
 
@@ -52,20 +54,20 @@ function ServiceCards() {
                     flexWrap="wrap"
                 >
                     <CardServiceComponent
-                        titulo="Graphic Design"
+                        titulo="Diseño grafico"
                         icon={faPaintBrush} />
 
                     <CardServiceComponent
-                        titulo="aplication"
+                        titulo="aplicacion"
                         icon={faHouseLaptop} />
 
                     <CardServiceComponent
 
-                        titulo="Problem Solving"
+                        titulo="resolucion problemas"
                         icon={faComputer} />
 
                 </Box>
-                <Button as={motion.button} whileHover={{ scale: 1.2, color: "black", backgroundColor: "white" }} colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%"  >welcome</Button>
+                <Button as={motion.button} whileHover={{ scale: 1.2, color: "black", backgroundColor: "white" }} colorScheme="#060606" bg="#ef4f10" size="lg" marginTop="3%"  >ver todo</Button>
             </Box>
 
         </Flex>

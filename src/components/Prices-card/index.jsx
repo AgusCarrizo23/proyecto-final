@@ -10,7 +10,7 @@ function PricesCards() {
         <Flex bgColor="#060606" align="center" justify="space-between" justifyContent="center" py={16} flexDirection="column">
             <Container color="white" textAlign="center" marginTop="3%">
                 <Heading>Nuestros planes de precios </Heading>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est neque debitis doloribus, quam iste corporis in quis tempore illum possimus esse. Iure sunt perferendis quia sapiente, eligendi quam repellat. Nesciunt!
+                ¡Bienvenidos a nuestros servicios! Ofrecemos una variedad de planes diseñados para satisfacer las necesidades de cada uno de nuestros clientes.
             </Container>
             <Flex display="flex" flexDirection={{ base: 'column', md: 'row' }}  justifyContent="space-between" width="80%" marginTop="3%">
             <motion.div whileHover={{ scale: 1.2 }}>

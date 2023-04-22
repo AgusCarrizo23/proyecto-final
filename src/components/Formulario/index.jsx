@@ -86,7 +86,7 @@ function Formulario() {
                         whileTap={{ scale: 0.9 }} bgColor="#ef4f10" marginTop="16px" type="submit"marginLeft="40%" marginBottom="2%" >
                         Enviar
                      </Button>
-                     <input type="hidden" name="_next" value="http://localhost:5173" />
+                     <input type="hidden" name="_next" value="https://agustina-carrizo.netlify.app/" />
                      <input type="hidden" name="_captcha" value="false" />
                   </form>
                </Box>
